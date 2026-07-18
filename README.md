@@ -38,7 +38,7 @@
 - [🎤 Presentation](#-presentation)
 - [📄 References](#-references)
 - [🔮 Future Work](#-future-work)
-- [👨‍💻 Author](#-author)
+- [👨‍💻 Author](#author)
 - [📜 License](#-license)
 
 ---
@@ -319,7 +319,7 @@ All supporting research papers used for this dissertation are available in the [
 - 📱 Edge AI optimization for resource-constrained devices
 
 ---
-
+<a name="author"></a>
 ## 👨‍💻 Author
 
 <div align="center">
