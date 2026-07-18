@@ -1,128 +1,354 @@
-# 🛡️ BOTNET ATTACK DETECTION USING XAI
-> **XAI-Based Stacked Attention Deep Learning Framework for IoT Botnet Attack Detection**
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
-![Flask](https://img.shields.io/badge/Flask-WebApp-black)
-![License](https://img.shields.io/badge/License-Academic-green)
+# 🛡️ Botnet Attack Detection using Explainable AI (XAI)
 
-## 📖 Overview
-This repository contains the complete implementation, trained models, thesis, presentation, datasets and supporting resources for an M.Tech CSE project on explainable IoT botnet attack detection. The framework combines ANN, CNN, LSTM and a Stacked Attention model with LIME, SHAP and Integrated Gradients explanations.
+### XAI-Based Stacked Attention Deep Learning Framework for IoT Botnet Attack Detection
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-DL%20API-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
+[![Flask](https://img.shields.io/badge/Flask-WebApp-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-Academic-2ea44f?style=for-the-badge)](#-license)
+
+<br/>
+
+*An M.Tech (Computer Science & Engineering) thesis project that detects IoT botnet attacks using Deep Learning, explained through LIME, SHAP, and Integrated Gradients.*
+
+</div>
+
+---
 
 ## 📑 Table of Contents
-- Features
-- Architecture
-- Dataset
-- Models
-- Explainable AI
-- Application Screenshots
-- Performance
-- Project Structure
-- Installation
-- Running
-- Documentation
-- Presentation
-- References
-- Future Work
-- Author
 
-## ✨ Features
-- IoT Botnet Detection
-- ANN, CNN, LSTM and Stacked Attention models
-- Explainable AI using LIME, SHAP and Integrated Gradients
-- Flask Web Application
-- User Registration & Login
-- Dataset Upload and Prediction
-- Saved trained models
-- Complete M.Tech Thesis and Presentation
+- [📖 Overview](#-overview)
+- [🎯 Objectives](#-objectives)
+- [✨ Key Features](#-key-features)
+- [🏗️ System Architecture](#️-system-architecture)
+- [📊 Dataset](#-dataset)
+- [🧠 Deep Learning Models](#-deep-learning-models)
+- [🔍 Explainable AI (XAI)](#-explainable-ai-xai)
+- [🌐 Flask Web Application](#-flask-web-application)
+- [📈 Performance](#-performance)
+- [📂 Project Structure](#-project-structure)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [🚀 Installation & Setup](#-installation--setup)
+- [▶️ How to Run](#️-how-to-run)
+- [📚 Documentation](#-documentation)
+- [🎤 Presentation](#-presentation)
+- [📄 References](#-references)
+- [🔮 Future Work](#-future-work)
+- [👨‍💻 Author](#-author)
+- [📜 License](#-license)
 
-# 🏗️ System Architecture
-<p align="center"><img src="Images/Architecture.jpg" width="900"></p>
+---
 
-# 📊 Dataset
-UNSW-NB15 dataset is used for training and evaluation.
+## 📖 Overview
 
-<p align="center"><img src="Images/Attack Class Distribution in the Dataset.jpg" width="900"></p>
+The rapid growth of the **Internet of Things (IoT)** has significantly increased the risk of **botnet attacks**. Traditional machine learning models often achieve high detection accuracy but behave as **"black boxes"**, offering little insight into *why* a decision was made.
+
+This project proposes an **XAI-Based Stacked Attention Deep Learning Framework** that:
+
+- 🎯 Detects botnet attacks in IoT network traffic with high accuracy
+- 🧩 Explains every prediction using state-of-the-art XAI techniques
+- 🌐 Ships as an easy-to-use Flask web application
+- 📊 Visualizes feature importance for transparent, trustworthy predictions
+
+---
+
+## 🎯 Objectives
+
+| # | Objective |
+|---|-----------|
+| 1 | Detect malicious botnet traffic in IoT environments |
+| 2 | Compare multiple Deep Learning architectures (ANN, CNN, LSTM) |
+| 3 | Improve detection accuracy using a Stacked Attention model |
+| 4 | Generate interpretable predictions using Explainable AI |
+| 5 | Deploy the trained model as a functional Flask web app |
+
+---
+
+## ✨ Key Features
+
+- ✅ IoT Botnet Detection on the **UNSW-NB15** dataset
+- ✅ ANN, CNN, LSTM, and **Stacked Attention** deep learning models
+- ✅ Explainability via **LIME**, **SHAP**, and **Integrated Gradients**
+- ✅ Full-stack **Flask** web application
+- ✅ User registration & login system
+- ✅ Dataset upload and real-time prediction
+- ✅ Pre-trained, ready-to-use model weights
+- ✅ Complete M.Tech thesis and presentation included
+
+---
+
+## 🏗️ System Architecture
+
+<div align="center">
+<img src="Images/Architecture.jpg" width="600" alt="System Architecture">
+</div>
+
+---
+
+## 📊 Dataset
+
+The framework is trained and evaluated on the **UNSW-NB15** dataset, a widely-used benchmark for network intrusion and botnet detection research.
+
+**Workflow:** Data Cleaning → Label Encoding → Feature Scaling → Train-Test Split → Model Training → Prediction → Explainability
+
+<div align="center">
+<img src="Images/Attack Class Distribution in the Dataset.jpg" width="550" alt="Attack Class Distribution">
+</div>
+
+---
 
 ## 🧠 Deep Learning Models
-- Artificial Neural Network (ANN)
-- Convolutional Neural Network (CNN)
-- Long Short-Term Memory (LSTM)
-- Stacked Attention Deep Learning Model
 
-## 🔍 Explainable AI
-### LIME
-<p align="center"><img src="Images/LIME Explanation.jpg" width="850"></p>
+The project implements and benchmarks the following architectures:
 
-### SHAP
-<p align="center"><img src="Images/SHAP Explanation.jpg" width="850"></p>
+- 🔹 **Artificial Neural Network (ANN)**
+- 🔹 **Convolutional Neural Network (CNN)**
+- 🔹 **Long Short-Term Memory (LSTM)**
+- 🔹 **Stacked Attention Deep Learning Model** *(proposed)*
 
-### Integrated Gradients
-<p align="center"><img src="Images/Integrated Gradient Explanation.jpg" width="850"></p>
+---
+
+## 🔍 Explainable AI (XAI)
+
+Predictions are made transparent using three complementary explainability techniques:
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**LIME**
+<br/>
+<img src="Images/LIME Explanation.jpg" width="280" alt="LIME Explanation"><br/>
+<sub>Local Interpretable Model-Agnostic Explanations</sub>
+</td>
+<td align="center" width="33%">
+
+**SHAP**
+<br/>
+<img src="Images/SHAP Explanation.jpg" width="280" alt="SHAP Explanation"><br/>
+<sub>SHapley Additive exPlanations</sub>
+</td>
+<td align="center" width="33%">
+
+**Integrated Gradients**
+<br/>
+<img src="Images/Integrated Gradient Explanation.jpg" width="280" alt="Integrated Gradients Explanation"><br/>
+<sub>Attribution via path-integrated gradients</sub>
+</td>
+</tr>
+</table>
+
+---
 
 ## 🌐 Flask Web Application
-### Home
-<p align="center"><img src="Images/Home Page of Proposed Application.jpg" width="850"></p>
 
-### Registration
-<p align="center"><img src="Images/Creating the New Account for Proposed Application Access.jpg" width="850"></p>
+<table>
+<tr>
+<td align="center" width="33%">
 
-### Prediction
-<p align="center"><img src="Images/Uploading and Prediction of Botnet Attack Page.jpg" width="850"></p>
+**🏠 Home Page**
+<br/>
+<img src="Images/Home Page of Proposed Application.jpg" width="280" alt="Home Page">
+</td>
+<td align="center" width="33%">
+
+**📝 Registration**
+<br/>
+<img src="Images/Creating the New Account for Proposed Application Access.jpg" width="280" alt="Registration Page">
+</td>
+<td align="center" width="33%">
+
+**🔮 Prediction**
+<br/>
+<img src="Images/Uploading and Prediction of Botnet Attack Page.jpg" width="280" alt="Prediction Page">
+</td>
+</tr>
+</table>
+
+**Application capabilities:**
+
+- 👤 User Registration & Login
+- 📁 Dataset Upload
+- 🤖 Botnet Prediction
+- 📊 XAI Visualization
+- 📋 Result Display
+
+---
 
 ## 📈 Performance
-<p align="center"><img src="Images/Performance Comparison of Deep Learning Models.jpg" width="850"></p>
+
+<div align="center">
+<img src="Images/Performance Comparison of Deep Learning Models.jpg" width="600" alt="Performance Comparison">
+</div>
+
+The **Stacked Attention model** consistently outperforms baseline ANN, CNN, and LSTM models in detection accuracy while remaining fully explainable.
+
+---
 
 ## 📂 Project Structure
+
 ```text
-Dataset/
-Images/
-model/
-references/
-static/
-templates/
-BotnetDetection.ipynb
-BotnetDetection.html
-attention.py
-database.txt
-requirements.txt
-Final_Thesis_Main.pdf
-Ammaar_ppt.pptx
+BOTNET-ATTACK-DETECTION-USING-XAI/
+│
+├── Dataset/                  # Training & testing datasets
+├── Images/                   # README & documentation images
+├── model/                    # Trained deep learning models
+├── references/                # Research papers & citations
+├── static/                    # Flask static assets (CSS/JS)
+├── templates/                  # Flask HTML templates
+│
+├── attention.py                 # Stacked Attention model implementation
+├── BotnetDetection.ipynb          # Main experimentation notebook
+├── BotnetDetection.html            # HTML export of notebook
+├── database.txt                     # Application database file
+├── requirements.txt                  # Python dependencies
+├── Final_Thesis_Main.pdf              # Complete M.Tech thesis
+├── Ammaar_ppt.pptx                     # Project presentation
+└── README.md                            # You are here
 ```
 
-## ⚙️ Installation
+---
+
+## ⚙️ Tech Stack
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square)
+![SHAP](https://img.shields.io/badge/-SHAP-8A2BE2?style=flat-square)
+![LIME](https://img.shields.io/badge/-LIME-FF69B4?style=flat-square)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+</div>
+
+---
+
+## 🚀 Installation & Setup
+
+**1. Clone the repository**
+
 ```bash
-git clone <repository-url>
+git clone https://github.com/YOUR_USERNAME/BOTNET-ATTACK-DETECTION-USING-XAI.git
 cd BOTNET-ATTACK-DETECTION-USING-XAI
+```
+
+**2. Create a virtual environment** *(recommended)*
+
+```bash
+python -m venv venv
+source venv/bin/activate      # On Windows: venv\Scripts\activate
+```
+
+**3. Install dependencies**
+
+```bash
 pip install -r requirements.txt
 ```
 
-## ▶️ Run
-Launch Jupyter Notebook to reproduce experiments or run the Flask application according to your project setup.
+---
 
-## 📚 Documentation
-- `Final_Thesis_Main.pdf`
+## ▶️ How to Run
 
-## 🎤 Presentation
-- `Ammaar_ppt.pptx`
+### 📓 Run the Notebook
 
-## 📄 References
-Research papers are available in the `references/` directory.
+Open and execute the experimentation notebook:
 
-## 🚀 Future Work
-- Real-time deployment
-- Transformer-based architectures
-- Federated learning
-- Cloud integration
-- Edge AI optimization
+```bash
+jupyter notebook BotnetDetection.ipynb
+```
 
-## 👨‍💻 Author
-**Ammaar**  
-M.Tech (Computer Science & Engineering)
+### 🌐 Run the Flask Web Application
 
-<p align="center">
-<img src="Images/Footer.png" width="700">
-</p>
+```bash
+python app.py
+```
+
+Then open your browser at:
+
+```
+http://127.0.0.1:5000/
+```
 
 ---
-⭐ If you found this repository useful, consider giving it a star.
+
+## 📚 Documentation
+
+| Resource | File |
+|----------|------|
+| 📖 Complete M.Tech Thesis | [`Final_Thesis_Main.pdf`](Final_Thesis_Main.pdf) |
+| 📓 Notebook (HTML Export) | [`BotnetDetection.html`](BotnetDetection.html) |
+| 🧩 Attention Model Source | [`attention.py`](attention.py) |
+
+---
+
+## 🎤 Presentation
+
+The project's PowerPoint presentation is available at:
+
+```
+Ammaar_ppt.pptx
+```
+
+---
+
+## 📄 References
+
+All supporting research papers used for this dissertation are available in the [`references/`](references/) directory.
+
+---
+
+## 🔮 Future Work
+
+- ⚡ Real-time deployment on live IoT network traffic
+- 🤖 Transformer-based detection architectures
+- 🌍 Federated learning for privacy-preserving training
+- ☁️ Cloud-native integration (AWS / Azure / GCP)
+- 📱 Edge AI optimization for resource-constrained devices
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Ammaar**
+<br/>
+M.Tech — Computer Science & Engineering
+
+</div>
+
+---
+
+## ⭐ Acknowledgements
+
+This work was developed as part of an M.Tech dissertation focusing on **Explainable Artificial Intelligence for Botnet Attack Detection**. Special thanks to the research community whose datasets and publications made this project possible.
+
+---
+
+## 📜 License
+
+This repository is intended strictly for **academic and educational purposes**.
+
+---
+
+<div align="center">
+<img src="Images/Footer.png" width="900" alt="Footer">
+
+<br/><br/>
+
+⭐ **If you found this project useful, consider giving it a star!** ⭐
+
+</div>
