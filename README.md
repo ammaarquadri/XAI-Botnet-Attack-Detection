@@ -324,9 +324,13 @@ All supporting research papers used for this dissertation are available in the [
 
 <div align="center">
 
-**Ammaar**
-<br/>
-M.Tech — Computer Science & Engineering
+### Muhammad Ammaar Quadri
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=2ea44f&center=true&vCenter=true&width=435&lines=M.Tech+%E2%80%94+Computer+Science+%26+Engineering)](https://git.io/typing-svg)
+
+[![GitHub](https://img.shields.io/badge/GitHub-ammaarquadri-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ammaarquadri)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ammaarquadri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ammaarquadri)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=vercel&logoColor=white)](https://ammaar-quadri-123.vercel.app/)
 
 </div>
 
